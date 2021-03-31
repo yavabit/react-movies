@@ -1,0 +1,104 @@
+@-webkit-keyframes preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.container {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+header {
+  background-color: #0d6efd;
+  padding-left: 0;
+  padding-right: 0;
+}
+.filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.filters .filter-year input {
+  display: inline-block;
+}
+.movies {
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.movies .movie-card {
+  height: 550px;
+  width: 23%;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(128, 128, 128, 0.486);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.movies .movie-card .img-box {
+  height: 73%;
+  width: 100%;
+}
+.movies .movie-card .img-box img {
+  height: 100%;
+  width: 100%;
+}
+.movies .movie-card .card-body {
+  height: 27%;
+}
+footer {
+  background-color: #0d6efd;
+}
+footer .upperFoot {
+  padding: 10px 0;
+  border-bottom: 1px solid #000;
+}
+footer .downFoot {
+  padding: 10px 0;
+}
+footer .downFoot a {
+  color: white;
+}
+.preloader {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.preloader .pre-element {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.preloader .pre-element span {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-right: 3px solid #0d6efd;
+  border-radius: 50%;
+  -webkit-animation: .7s linear 0s normal none infinite running preloader;
+          animation: .7s linear 0s normal none infinite running preloader;
+}
